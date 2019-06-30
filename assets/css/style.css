@@ -1,0 +1,20 @@
+
+body{
+
+    background-color: rgba(0, 0, 0, 0.979);
+}
+#page_name{
+    position: absolute;
+    height: 200px;
+    width: 400px;
+    margin: -351px 0px 0px -466px;
+    top: 50%;
+    left: 50%;
+}
+#backround_image{
+background-repeat: no-repeat;
+margin: 146px -10px 23px -104px;
+}
+
+
+
