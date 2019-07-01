@@ -8,26 +8,33 @@
     <link rel="stylesheet" href="assets/css/style.css">
 
     <title>Battle SpaceShip</title>
-
-
+   
+    
+   
 </head> 
 
 
 <body>
 
- 
+  <!-- Backround Sound -->
+  <div id=bsound>
+      <iframe src="assets/images/Bsound.mp3" allow="autoplay" id="audio"></iframe>
+      <audio id="player" autoplay hidden >
+      <source src="/assets/images/Bsound.mp3" type="audio/mp3">
+      
+      </audio>
+    </div>
 
 
-  <div id="page_name">
-    <img src="assets/images/page_name.jpg" alt="page_name">
-  </div>
+   <!-- Page Logo -->
+     <div id="page_name">
+        <img src="assets/images/page_name.jpg" alt="page_name">
+      </div>
 
 
   <div id="backround_image">
     <img src="assets/images/space_2.jpg" alt="space_2" width="50%" height="50%">
   </div>
-
-
 
 
   <div id="win">
@@ -45,7 +52,17 @@
   <table>
   <tr>
     <!-- row 1 -->
-    <td id="0"></td><td id="1"></td><td id="2"></td><td id="3"></td><td id="4"></td><td id="5">
+    <td id="0">
+      
+      <a href="javascript:;" onclick="show('win');">show</a><br>
+      <a href="javascript:;" onclick="hide('win');">hide</a><br>
+   
+  </td><td id="1"></td><td id="2"></td><td id="3"></td><td id="4">
+
+      <a href="javascript:;" onclick="show('lose');">show</a><br>
+      <a href="javascript:;" onclick="hide('lose');">hide</a><br>
+
+  </td><td id="5">
   </tr>
 
   <tr>
@@ -75,6 +92,6 @@
 
   </table>
   
-    <script src="/assets/Javascript/game.js"></script>
+    <script type="text/javascript" src="assets/Javascript/game.js"></script>
 </body>
 </html>
