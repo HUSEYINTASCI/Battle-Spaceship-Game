@@ -3,9 +3,17 @@ body{
 
     background-color: rgba(0, 0, 0, 0.979);
     position: fixed;
+     
 }
 
-/* Backround Sound */
+/* Lightsword cursor  */
+
+* {
+    cursor: url(http://cur.cursors-4u.net/others/oth-1/oth24.cur), auto !important;
+}
+
+
+/* Background Sound */
 
 #bsound{
 
@@ -22,11 +30,15 @@ body{
     top: 50%;
     left: 50%;
 }
+
 #backround_image{
     background-repeat: no-repeat;
     margin: 0px 0px 156px -104px;
+    cursor: url(http://www.rw-designer.com/cursor-extern.php?id=66943);
 }
 
+
+/* Millenium Falcon */
 #falcon {
 animation-timing-function: linear;
 position: relative;
@@ -39,6 +51,8 @@ margin-top: 138px;
     from {left: -400px;}
     to {left: 1600px;}
   }
+
+ /* Battle Table */
 table{
     border: 1px rgb(255, 238, 6) solid;
     width: 600px;
@@ -46,14 +60,15 @@ table{
     margin: -588px 0 0 571px;
     position: absolute;
 }
-
-
 td{
 
 border: 1px rgb(255, 238, 6) solid;
 width: 100px;
 height: 56px;
 }
+
+
+/* Win Lose Element */
 
 #win{
     margin-left: 79%;
@@ -65,7 +80,15 @@ height: 56px;
     display: none;
 }
 
-#lose{margin-left: 79%;padding: -61px;width: 67%;margin-top: -605px;z-index: 2;position: absolute;display: none;}
+#lose{
+    margin-left: 79%;
+    padding: -61px;
+    width: 67%;
+    margin-top: -605px;
+    z-index: 2;
+    position: absolute;
+    display: none;
+}
 
 
 @media screen and (max-width: 320) {
