@@ -2,30 +2,48 @@
 body{
 
     background-color: rgba(0, 0, 0, 0.979);
+    position: fixed;
 }
+
+/* Backround Sound */
+
 #bsound{
 
     display: none;
 }
+
+ /* Page Logo */
+
 #page_name{
     position: absolute;
     height: 200px;
     width: 400px;
-    margin: -351px 0px 0px -466px;
+    margin: -450px 0px 0px -466px;
     top: 50%;
     left: 50%;
 }
 #backround_image{
     background-repeat: no-repeat;
-    margin: 146px -10px 23px -104px;
+    margin: 0px 0px 156px -104px;
 }
 
+#falcon {
+animation-timing-function: linear;
+position: relative;
+-webkit-animation: mymove 6s infinite; /* Safari 4.0 - 8.0 */
+animation: mymove 15s infinite;
+margin-top: 138px;
+}
 
+@keyframes mymove {
+    from {left: -400px;}
+    to {left: 1600px;}
+  }
 table{
     border: 1px rgb(255, 238, 6) solid;
     width: 600px;
-    height: 400px
-    ;margin: -471px 0 0 571px;
+    height: 400px;
+    margin: -588px 0 0 571px;
     position: absolute;
 }
 
@@ -37,25 +55,17 @@ width: 100px;
 height: 56px;
 }
 
-#win{ 
+#win{
     margin-left: 79%;
     padding: -61px;
     width: 67%;
-    margin-top: -501px;
+    margin-top: -605px;
     z-index: 1;
     position: absolute;
     display: none;
 }
 
-#lose{
-margin-left: 79%;
-padding: -61px;
-width: 67%;
-margin-top: -501px;
-z-index: 2;
-position: absolute;
-display: none;
-}
+#lose{margin-left: 79%;padding: -61px;width: 67%;margin-top: -605px;z-index: 2;position: absolute;display: none;}
 
 
 @media screen and (max-width: 320) {
