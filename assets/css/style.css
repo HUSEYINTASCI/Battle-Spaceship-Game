@@ -1,9 +1,9 @@
 
 body{
 
-    background-color: rgba(0, 0, 0, 0.979);
-    position: fixed;
-     
+  background-color: rgba(0, 0, 0, 0.979);
+  position: fixed;
+   
 }
 
 /* Lightsword cursor  */
@@ -37,7 +37,7 @@ body{
     cursor: url(http://www.rw-designer.com/cursor-extern.php?id=66943);
 }
 
-
+ 
 /* Millenium Falcon */
 #falcon {
 animation-timing-function: linear;
