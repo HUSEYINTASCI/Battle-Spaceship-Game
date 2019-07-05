@@ -1,123 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    
-     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-     <link rel="stylesheet" href="assets/css/style.css">
 
-    <title>Battle SpaceShip</title>
-   
-    
-   
-</head> 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <title>Battle SpaceShip</title>
+
+</head>
 
 
 <body>
 
-  <!-- Background Sound -->
+  <div id="board">
+    <div id="content">
+      <p id="title">Episode I</p>
+      <p id="subtitle">THE FORCE AWAKENS</p>
+      <br>
+      <p> Luke Skywalker has vanished. In his absence, the sinister FIRST ORDER has risen from the ashes of the Empire
+        and will not rest until Skywalker, the last Jedi, has been destroyed.</p>
 
-    <div id=bsound>
-      <iframe src="/assets/images/Bsound.mp3" allow="autoplay" id="audio"></iframe>
-      <audio id="player" autoplay loop>
+      <p>With the support of the REPUBLIC, General Leia Organa leads a brave RESISTANCE. She is desperate to find her
+        brother Luke and gain his help in restoring peace and justice to the galaxy.</p>
+    </div>
+  </div>
+
+
+
+  <!-- Background Sound -->
+  <!-- !!!!!!!!!!!!!! just working crome browser -->
+  <div id=bsound>
+    <iframe src="assets/images/Bsound.mp3" allow="autoplay" id="audio"></iframe>
+
+    <audio id="player" autoplay loop>
 
       <source src="/assets/images/Bsound.mp3" type="audio/mp3">
-      
-      </audio>
-    </div>
+
+    </audio>
+  </div>
 
 
 
-     
-    <!-- Millennium Falcon -->
 
-    <div id="falcon">
+  <!-- Millennium Falcon -->
 
-        <img src="assets/images/millennium-falcon.jpeg" alt="millennium-falcon"width="20%" height="20%">
+  <div id="falcon">
 
-    </div>
+    <img src="assets/images/millennium-falcon.jpeg" alt="millennium-falcon" width="20%" height="20%">
 
-    <!-- Page Logo -->
+  </div>
 
-    <div id="page_name">
-        <img src="assets/images/page_name.jpg" alt="page_name">
-    </div>
+  <!-- Page Logo -->
 
-    <!-- Backround image -->
-    <div id="backround_image">
-          <img src="assets/images/space_2.jpg" alt="space_2" width="50%" height="50%">
-         
-    </div>
+  <div id="page_name">
+    <img src="assets/images/page_name.jpg" alt="page_name">
+  </div>
+
+  <!-- Backround image -->
+  <div id="backround_image">
+    <img src="assets/images/space_2.jpg" alt="space_2" width="50%" height="50%">
+
+  </div>
 
 
-    <div id="win">
+  <div id="win">
 
-      <img src="assets/images/yoda-win.jpg" alt="win" width="30%" height="30%">
+    <img src="assets/images/yoda-win.jpg" alt="win" width="30%" height="30%">
 
-    </div>
+  </div>
 
-    <div id="lose">
+  <div id="lose">
 
-       <img src="assets/images/Darth_Vader-lose.jpg" alt="lose" width="30%" height="30%">
+    <img src="assets/images/Darth_Vader-lose.jpg" alt="lose" width="30%" height="30%">
 
-    </div>
-  
+  </div>
+
 
   <!-- Battle Table -->
 
   <table>
-  <tr>
-    <!-- row 1 -->
-    <td id="s0">
-      
-      <a href="javascript:;" onclick="show('win');">show</a><br>
-      <a href="javascript:;" onclick="hide('win');">hide</a><br>
-     
-  </td><td id="s1"></td><td id="s2">
-      <img src="assets/images/enemy.jpg" alt="enemy" width="100px" height="60px"">
-  </td><td id="s3"></td><td id="s4">
+    <tr>
+      <!-- row 1 -->
+      <td id="s0">
 
-      <a href="javascript:;" onclick="show('lose');">show</a><br>
-      <a href="javascript:;" onclick="hide('lose');">hide</a><br>
+        <a href="javascript:;" onclick="show('win');">show</a><br>
+        <a href="javascript:;" onclick="hide('win');">hide</a><br>
 
-  </td><td id="s5">
-  </tr>
+      </td>
+      <td id="s1"></td>
+      <td id="s2">
+        <img class="t" src="assets/images/enemy.jpg" alt="enemy" width="100px" height="60px"">
+  </td><td id=" s3"></td>
+      <td id="s4">
 
-  <tr>
-    <!-- row 2 -->
-    <td id="s6"></td><td id="s7"></td><td id="s8"></td><td id="s9"></td><td id="s10"></td><td id="s11">
-  </tr>
+        <a href="javascript:;" onclick="show('lose');">show</a><br>
+        <a href="javascript:;" onclick="hide('lose');">hide</a><br>
 
-  <tr>
-    <!-- row 3 -->
-    <td id="s12"></td><td id="s13"></td><td id="s14"></td><td id="s15"></td><td id="s16"></td><td id="s17">
-  </tr>
+      </td>
+      <td id="s5">
+    </tr>
 
-  <tr>
-    <!-- row 4 -->
-    <td id="s18"></td><td id="s19"></td><td id="s20"></td><td id="s21"></td><td id="s22"></td><td id="s23">
-  </tr>
+    <tr>
+      <!-- row 2 -->
+      <td id="s6"></td>
+      <td id="s7"></td>
+      <td id="s8"></td>
+      <td id="s9"></td>
+      <td id="s10"></td>
+      <td id="s11">
+    </tr>
 
-  <tr>
-    <!-- row 5 -->
-    <td id="s24"></td><td id="s25"></td><td id="s26"></td><td id="s27"></td><td id="s28"></td><td id="s29">
-  </tr>
+    <tr>
+      <!-- row 3 -->
+      <td id="s12"></td>
+      <td id="s13"></td>
+      <td id="s14"></td>
+      <td id="s15"></td>
+      <td id="s16"></td>
+      <td id="s17">
+    </tr>
 
-  <tr>
-   <!-- row 6 -->
-    <td id="s30"></td><td id="s31"></td><td id="s32"></td><td id="s33"></td><td id="s34"></td><td id="s35">
-  </tr>
+    <tr>
+      <!-- row 4 -->
+      <td id="s18"></td>
+      <td id="s19"></td>
+      <td id="s20"></td>
+      <td id="s21"></td>
+      <td id="s22"></td>
+      <td id="s23">
+    </tr>
+
+    <tr>
+      <!-- row 5 -->
+      <td id="s24"></td>
+      <td id="s25"></td>
+      <td id="s26"></td>
+      <td id="s27"></td>
+      <td id="s28"></td>
+      <td id="s29">
+    </tr>
+
+    <tr>
+      <!-- row 6 -->
+      <td id="s30"></td>
+      <td id="s31"></td>
+      <td id="s32"></td>
+      <td id="s33"></td>
+      <td id="s34"></td>
+      <td id="s35">
+    </tr>
 
   </table>
 
-  
-  
-  
+
+
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="assets/Javascript/game.js"></script>
 </body>
+
 </html>

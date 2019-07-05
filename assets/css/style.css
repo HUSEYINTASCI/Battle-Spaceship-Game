@@ -1,9 +1,63 @@
+body {
 
-body{
+    background-color: rgba(0, 0, 0, 0.979);
+    position: fixed;
 
-  background-color: rgba(0, 0, 0, 0.979);
-  position: fixed;
-   
+}
+
+/* Intro  */
+p {
+    color: #FFFF82;
+}
+
+#board {
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+    transform: perspective(300px) rotateX(25deg);
+    transform-origin: 50% 76%;
+    text-align: justify;
+    position: absolute;
+    font-weight: bold;
+    overflow: hidden;
+    font-size: 350%;
+    height: 995px;
+    width: 144%;
+    display: block;
+    bottom: 0;
+    left: 50%;
+    background-color: black;
+    margin: -414px -49px 253px -1135px;
+    z-index: 99;
+}
+
+#board:after {
+    position: absolute;
+    content: ' ';
+    bottom: 60%;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+
+#content {
+    animation: scroll 100s linear 1s;
+    position: absolute;
+    top: 100%;
+}
+
+#title,
+#subtitle {
+    text-align: center;
+}
+
+@keyframes scroll {
+    0% {
+        top: 100%;
+    }
+
+    100% {
+        top: -170%;
+    }
 }
 
 /* Lightsword cursor  */
@@ -15,62 +69,72 @@ body{
 
 /* Background Sound */
 
-#bsound{
+#bsound {
 
     display: none;
 }
 
- /* Page Logo */
+/* Page Logo */
 
-#page_name{
+#page_name {
     position: absolute;
     height: 200px;
     width: 400px;
     margin: -450px 0px 0px -466px;
     top: 50%;
     left: 50%;
+
+
 }
 
-#backround_image{
+/* Backgraund Image */
+#backround_image {
     background-repeat: no-repeat;
     margin: 0px 0px 156px -104px;
     cursor: url(http://www.rw-designer.com/cursor-extern.php?id=66943);
 }
 
- 
+
 /* Millenium Falcon */
 #falcon {
-animation-timing-function: linear;
-position: relative;
--webkit-animation: mymove 6s infinite; /* Safari 4.0 - 8.0 */
-animation: mymove 15s infinite;
-margin-top: 138px;
+    animation-timing-function: linear;
+    position: relative;
+    -webkit-animation: mymove 6s infinite;
+    /* Safari 4.0 - 8.0 */
+    animation: mymove 15s infinite;
+    margin-top: 138px;
 }
 
 @keyframes mymove {
-    from {left: -400px;}
-    to {left: 1600px;}
-  }
+    from {
+        left: -400px;
+    }
 
- /* Battle Table */
-table{
-    border: 1px rgb(255, 238, 6) solid;
+    to {
+        left: 1600px;
+    }
+}
+
+/* Battle Table */
+table {
+    border: 3px #ffdf01 solid;
     width: 600px;
     height: 400px;
     margin: -588px 0 0 571px;
     position: absolute;
 }
-td{
 
-border: 1px rgb(255, 238, 6) solid;
-width: 100px;
-height: 56px;
+td {
+
+    border: 3px #ffdf01 solid;
+    width: 100px;
+    height: 56px;
 }
 
 
 /* Win Lose Element */
 
-#win{
+#win {
     margin-left: 79%;
     padding: -61px;
     width: 67%;
@@ -80,7 +144,7 @@ height: 56px;
     display: none;
 }
 
-#lose{
+#lose {
     margin-left: 79%;
     padding: -61px;
     width: 67%;
@@ -92,62 +156,56 @@ height: 56px;
 
 
 @media screen and (max-width: 320) {
-  
-  
+
+
     table {
         width: 100%;
     }
-       
-    
-     #page_name {
+
+
+    #page_name {
         width: 100%;
-      }
-  
     }
-  
-  @media screen and (max-width: 640px) {
-    
-   
+
+}
+
+@media screen and (max-width: 640px) {
+
+
     table {
         width: 100%;
     }
-      
-    
-     #page_name {
+
+
+    #page_name {
         width: 100%;
-      }
-  
     }
-  
-  
-    @media screen and (max-width: 768px) {
-     
-        table {
-            width: 100%;
-        }
-          
-        
-         #page_name {
-            width: 100%;
-          }
-      
-        }
-  
-    @media screen and (max-width: 980px ) {
-       
-        table {
-            width: 100%;
-        }
-           
-        
-         #page_name {
-            width: 100%;
-          }
-      
-        }
-  
-   
-  
-  
+
+}
 
 
+@media screen and (max-width: 768px) {
+
+    table {
+        width: 100%;
+    }
+
+
+    #page_name {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 980px) {
+
+    table {
+        width: 100%;
+    }
+
+
+    #page_name {
+        width: 100%;
+    }
+
+}
