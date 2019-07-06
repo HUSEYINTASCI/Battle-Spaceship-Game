@@ -1,3 +1,5 @@
+/* Body */
+
 body {
 
     background-color: rgba(0, 0, 0, 0.979);
@@ -6,8 +8,9 @@ body {
 }
 
 /* Intro  */
+
 p {
-    color: #FFFF82;
+    color: #ffdf01;
 }
 
 #board {
@@ -60,6 +63,28 @@ p {
     }
 }
 
+/* Counters */
+
+#miss {
+
+    background-color: black;
+    z-index: 501;
+    width: 176px;
+    height: 25px;
+    float: right;
+    margin-top: 226px;
+    margin-left: 47px;
+}
+
+#catch {
+    background-color: black;
+    z-index: 500;
+    width: 135px;
+    height: 25px;
+    float: right;
+    margin-top: 226px;
+}
+
 /* Lightsword cursor  */
 
 * {
@@ -88,6 +113,7 @@ p {
 }
 
 /* Backgraund Image */
+
 #backround_image {
     background-repeat: no-repeat;
     margin: 0px 0px 156px -104px;
@@ -96,6 +122,7 @@ p {
 
 
 /* Millenium Falcon */
+
 #falcon {
     animation-timing-function: linear;
     position: relative;
@@ -116,6 +143,7 @@ p {
 }
 
 /* Battle Table */
+
 table {
     border: 3px #ffdf01 solid;
     width: 600px;
@@ -129,16 +157,21 @@ td {
     border: 3px #ffdf01 solid;
     width: 100px;
     height: 56px;
+    color: #ffdf01;
+    text-align: center;
+    font: bold;
+
+
+
 }
 
-
-/* Win Lose Element */
+/* Images of win & lose */
 
 #win {
     margin-left: 79%;
     padding: -61px;
     width: 67%;
-    margin-top: -605px;
+    margin-top: -560px;
     z-index: 1;
     position: absolute;
     display: none;
@@ -148,12 +181,22 @@ td {
     margin-left: 79%;
     padding: -61px;
     width: 67%;
-    margin-top: -605px;
+    margin-top: -560px;
     z-index: 2;
     position: absolute;
     display: none;
 }
 
+/* information */
+
+#info {
+
+    margin: -214px 135px 0 0;
+    padding: 58px;
+    float: right;
+}
+
+/* Media */
 
 @media screen and (max-width: 320) {
 

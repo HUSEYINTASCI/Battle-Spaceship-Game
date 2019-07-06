@@ -16,23 +16,41 @@
 
 <body>
 
+
+  <!-- intro -->
+
   <div id="board">
     <div id="content">
       <p id="title">Episode I</p>
       <p id="subtitle">THE FORCE AWAKENS</p>
       <br>
-      <p> Luke Skywalker has vanished. In his absence, the sinister FIRST ORDER has risen from the ashes of the Empire
+      <p> A long time ago in a galaxy far, far away .... Luke Skywalker has vanished. In his absence, the sinister FIRST
+        ORDER has risen from the ashes of the Empire
         and will not rest until Skywalker, the last Jedi, has been destroyed.</p>
 
-      <p>With the support of the REPUBLIC, General Leia Organa leads a brave RESISTANCE. She is desperate to find her
-        brother Luke and gain his help in restoring peace and justice to the galaxy.</p>
+      <p>There are 8 enemy spaceships hiding and you have 20 attempts to find them and you need to use all 20 attempts,
+        good luck.</p>
     </div>
+  </div>
+
+
+
+  <!-- Counters -->
+
+  <div id="miss">
+    <p>TOTAL MISS = <span id="counterSpan1"></span></p>
+
+  </div>
+  <div id="catch">
+
+    <p>TOTAL CATCH = <span id="counterSpan2"></span></p>
   </div>
 
 
 
   <!-- Background Sound -->
   <!-- !!!!!!!!!!!!!! just working crome browser -->
+
   <div id=bsound>
     <iframe src="assets/images/Bsound.mp3" allow="autoplay" id="audio"></iframe>
 
@@ -61,11 +79,13 @@
   </div>
 
   <!-- Backround image -->
+
   <div id="backround_image">
     <img src="assets/images/space_2.jpg" alt="space_2" width="50%" height="50%">
 
   </div>
 
+  <!-- Images of win & lose  -->
 
   <div id="win">
 
@@ -82,81 +102,76 @@
 
   <!-- Battle Table -->
 
-  <table>
+  <table id="tbl">
     <tr>
       <!-- row 1 -->
-      <td id="s0">
-
-        <a href="javascript:;" onclick="show('win');">show</a><br>
-        <a href="javascript:;" onclick="hide('win');">hide</a><br>
-
-      </td>
-      <td id="s1"></td>
-      <td id="s2">
-        <img class="t" src="assets/images/enemy.jpg" alt="enemy" width="100px" height="60px"">
-  </td><td id=" s3"></td>
-      <td id="s4">
-
-        <a href="javascript:;" onclick="show('lose');">show</a><br>
-        <a href="javascript:;" onclick="hide('lose');">hide</a><br>
+      <td class="td" id="S0" onclick="tik(this.id);this.onclick=null;"></td>
+      <td class="td" id="S1" onclick="tik(this.id);this.onclick=null;"></td>
+      <td class="td" id="S2" onclick="tik(this.id);this.onclick=null;"></td>
+      <td class="td" id="S3" onclick="tik(this.id);this.onclick=null;"></td>
+      <td class="td" id="S4" onclick="tik(this.id);this.onclick=null;"></td>
+      <td class="td" id="S5" onclick="tik(this.id);this.onclick=null;"></td>
 
       </td>
-      <td id="s5">
     </tr>
 
     <tr>
       <!-- row 2 -->
-      <td id="s6"></td>
-      <td id="s7"></td>
-      <td id="s8"></td>
-      <td id="s9"></td>
-      <td id="s10"></td>
-      <td id="s11">
+      <td class="td" id="S6" onclick="tik(this.id);this.onclick=null;"></td>
+      <td class="td" id="S7" onclick="tik(this.id);this.onclick=null;"></td>
+      <td class="td" id="S8" onclick="tik(this.id);this.onclick=null;"></td>
+      <td class="td" id="S9" onclick="tik(this.id);this.onclick=null;"></td>
+      <td class="td" id="S10" onclick="tik(this.id);this.onclick=null;"></td>
+      <td class="td" id="S11" onclick="tik(this.id);this.onclick=null;"></td>
     </tr>
 
     <tr>
       <!-- row 3 -->
-      <td id="s12"></td>
-      <td id="s13"></td>
-      <td id="s14"></td>
-      <td id="s15"></td>
-      <td id="s16"></td>
-      <td id="s17">
+      <td class="td" id="S12" onclick="tik(this.id);this.onclick=null;"></td>
+      <td class="td" id="S13" onclick="tik(this.id);this.onclick=null;"></td>
+      <td class="td" id="S14" onclick="tik(this.id);this.onclick=null;"></td>
+      <td class="td" id="S15" onclick="tik(this.id);this.onclick=null;"></td>
+      <td class="td" id="S16" onclick="tik(this.id);this.onclick=null;"></td>
+      <td class="td" id="S17" onclick="tik(this.id);this.onclick=null;"></td>
     </tr>
 
     <tr>
       <!-- row 4 -->
-      <td id="s18"></td>
-      <td id="s19"></td>
-      <td id="s20"></td>
-      <td id="s21"></td>
-      <td id="s22"></td>
-      <td id="s23">
+      <td class="td" id="S18" onclick="tik(this.id);this.onclick=null;"></td>
+      <td class="td" id="S19" onclick="tik(this.id);this.onclick=null;"></td>
+      <td class="td" id="S20" onclick="tik(this.id);this.onclick=null;"></td>
+      <td class="td" id="S21" onclick="tik(this.id);this.onclick=null;"></td>
+      <td class="td" id="S22" onclick="tik(this.id);this.onclick=null;"></td>
+      <td class="td" id="S23" onclick="tik(this.id);this.onclick=null;"></td>
     </tr>
 
     <tr>
       <!-- row 5 -->
-      <td id="s24"></td>
-      <td id="s25"></td>
-      <td id="s26"></td>
-      <td id="s27"></td>
-      <td id="s28"></td>
-      <td id="s29">
+      <td class="td" id="S24" onclick="tik(this.id);this.onclick=null;"></td>
+      <td class="td" id="S25" onclick="tik(this.id);this.onclick=null;"></td>
+      <td class="td" id="S26" onclick="tik(this.id);this.onclick=null;"></td>
+      <td class="td" id="S27" onclick="tik(this.id);this.onclick=null;"></td>
+      <td class="td" id="S28" onclick="tik(this.id);this.onclick=null;"></td>
+      <td class="td" id="S29" onclick="tik(this.id);this.onclick=null;"></td>
     </tr>
 
     <tr>
       <!-- row 6 -->
-      <td id="s30"></td>
-      <td id="s31"></td>
-      <td id="s32"></td>
-      <td id="s33"></td>
-      <td id="s34"></td>
-      <td id="s35">
+      <td class="td" id="S30" onclick="tik(this.id);this.onclick=null;"></td>
+      <td class="td" id="S31" onclick="tik(this.id);this.onclick=null;"></td>
+      <td class="td" id="S32" onclick="tik(this.id);this.onclick=null;"></td>
+      <td class="td" id="S33" onclick="tik(this.id);this.onclick=null;"></td>
+      <td class="td" id="S34" onclick="tik(this.id);this.onclick=null;"></td>
+      <td class="td" id="S35" onclick="tik(this.id);this.onclick=null;"></td>
     </tr>
 
   </table>
 
-
+  <!-- Infomation -->
+  <span id="info">
+    <p>A long time ago in a galaxy far, far away .... There are 8 enemy spaceships hiding and you have 20 attempts to
+      find them and you need to use all 20 attempts, good luck.</p>
+  </span>
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
