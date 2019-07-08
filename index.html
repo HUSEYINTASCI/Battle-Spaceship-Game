@@ -28,8 +28,8 @@
         ORDER has risen from the ashes of the Empire
         and will not rest until Skywalker, the last Jedi, has been destroyed.</p>
 
-      <p>There are 8 enemy spaceships hiding and you have 20 attempts to find them and you need to use all 20 attempts,
-        good luck.</p>
+      <p>There are 10 enemy spaceships hiding , you need find at least 8 spaceships , you have 20 attempts to
+        find them and you need to use all 20 attempts, good luck.</p>
     </div>
   </div>
 
@@ -46,13 +46,14 @@
     <p>TOTAL CATCH = <span id="counterSpan2"></span></p>
   </div>
 
-
+  <!-- New Game -->
+    <button id="newgame" onclick="reloadThePage();"><p>New Game</p> </button>
 
   <!-- Background Sound -->
   <!-- !!!!!!!!!!!!!! just working crome browser -->
 
   <div id=bsound>
-    <iframe src="assets/images/Bsound.mp3" allow="autoplay" id="audio"></iframe>
+    <iframe src="assets/images/Bsound.mp3" allow="autoplay" id="audio" loop ></iframe>
   </div>
 
 
@@ -95,75 +96,78 @@
 
 
   <!-- Battle Table -->
+  <div id="tb">
+    <table id="tbl">
+      <tr>
+        <!-- row 1 -->
+        <td class="td" id="S0" onclick="tik(this.id)"></td>
+        <td class="td" id="S1" onclick="tik(this.id)"></td>
+        <td class="td" id="S2" onclick="tik(this.id)"></td>
+        <td class="td" id="S3" onclick="tik(this.id)"></td>
+        <td class="td" id="S4" onclick="tik(this.id)"></td>
+        <td class="td" id="S5" onclick="tik(this.id)"></td>
 
-  <table id="tbl">
-    <tr>
-      <!-- row 1 -->
-      <td class="td" id="S0" onclick="tik(this.id);this.onclick=null;"></td>
-      <td class="td" id="S1" onclick="tik(this.id);this.onclick=null;"></td>
-      <td class="td" id="S2" onclick="tik(this.id);this.onclick=null;"></td>
-      <td class="td" id="S3" onclick="tik(this.id);this.onclick=null;"></td>
-      <td class="td" id="S4" onclick="tik(this.id);this.onclick=null;"></td>
-      <td class="td" id="S5" onclick="tik(this.id);this.onclick=null;"></td>
+        </td>
+      </tr>
 
-      </td>
-    </tr>
+      <tr>
+        <!-- row 2 -->
+        <td class="td" id="S6" onclick="tik(this.id)"></td>
+        <td class="td" id="S7" onclick="tik(this.id)"></td>
+        <td class="td" id="S8" onclick="tik(this.id)"></td>
+        <td class="td" id="S9" onclick="tik(this.id)"></td>
+        <td class="td" id="S10" onclick="tik(this.id)"></td>
+        <td class="td" id="S11" onclick="tik(this.id)"></td>
+      </tr>
 
-    <tr>
-      <!-- row 2 -->
-      <td class="td" id="S6" onclick="tik(this.id);this.onclick=null;"></td>
-      <td class="td" id="S7" onclick="tik(this.id);this.onclick=null;"></td>
-      <td class="td" id="S8" onclick="tik(this.id);this.onclick=null;"></td>
-      <td class="td" id="S9" onclick="tik(this.id);this.onclick=null;"></td>
-      <td class="td" id="S10" onclick="tik(this.id);this.onclick=null;"></td>
-      <td class="td" id="S11" onclick="tik(this.id);this.onclick=null;"></td>
-    </tr>
+      <tr>
+        <!-- row 3 -->
+        <td class="td" id="S12" onclick="tik(this.id)"></td>
+        <td class="td" id="S13" onclick="tik(this.id)"></td>
+        <td class="td" id="S14" onclick="tik(this.id)"></td>
+        <td class="td" id="S15" onclick="tik(this.id)"></td>
+        <td class="td" id="S16" onclick="tik(this.id)"></td>
+        <td class="td" id="S17" onclick="tik(this.id)"></td>
+      </tr>
 
-    <tr>
-      <!-- row 3 -->
-      <td class="td" id="S12" onclick="tik(this.id);this.onclick=null;"></td>
-      <td class="td" id="S13" onclick="tik(this.id);this.onclick=null;"></td>
-      <td class="td" id="S14" onclick="tik(this.id);this.onclick=null;"></td>
-      <td class="td" id="S15" onclick="tik(this.id);this.onclick=null;"></td>
-      <td class="td" id="S16" onclick="tik(this.id);this.onclick=null;"></td>
-      <td class="td" id="S17" onclick="tik(this.id);this.onclick=null;"></td>
-    </tr>
+      <tr>
+        <!-- row 4 -->
+        <td class="td" id="S18" onclick="tik(this.id)"></td>
+        <td class="td" id="S19" onclick="tik(this.id)"></td>
+        <td class="td" id="S20" onclick="tik(this.id)"></td>
+        <td class="td" id="S21" onclick="tik(this.id)"></td>
+        <td class="td" id="S22" onclick="tik(this.id)"></td>
+        <td class="td" id="S23" onclick="tik(this.id)"></td>
+      </tr>
 
-    <tr>
-      <!-- row 4 -->
-      <td class="td" id="S18" onclick="tik(this.id);this.onclick=null;"></td>
-      <td class="td" id="S19" onclick="tik(this.id);this.onclick=null;"></td>
-      <td class="td" id="S20" onclick="tik(this.id);this.onclick=null;"></td>
-      <td class="td" id="S21" onclick="tik(this.id);this.onclick=null;"></td>
-      <td class="td" id="S22" onclick="tik(this.id);this.onclick=null;"></td>
-      <td class="td" id="S23" onclick="tik(this.id);this.onclick=null;"></td>
-    </tr>
+      <tr>
+        <!-- row 5 -->
+        <td class="td" id="S24" onclick="tik(this.id)"></td>
+        <td class="td" id="S25" onclick="tik(this.id)"></td>
+        <td class="td" id="S26" onclick="tik(this.id)"></td>
+        <td class="td" id="S27" onclick="tik(this.id)"></td>
+        <td class="td" id="S28" onclick="tik(this.id)"></td>
+        <td class="td" id="S29" onclick="tik(this.id)"></td>
+      </tr>
 
-    <tr>
-      <!-- row 5 -->
-      <td class="td" id="S24" onclick="tik(this.id);this.onclick=null;"></td>
-      <td class="td" id="S25" onclick="tik(this.id);this.onclick=null;"></td>
-      <td class="td" id="S26" onclick="tik(this.id);this.onclick=null;"></td>
-      <td class="td" id="S27" onclick="tik(this.id);this.onclick=null;"></td>
-      <td class="td" id="S28" onclick="tik(this.id);this.onclick=null;"></td>
-      <td class="td" id="S29" onclick="tik(this.id);this.onclick=null;"></td>
-    </tr>
+      <tr>
+        <!-- row 6 -->
+        <td class="td" id="S30" onclick="tik(this.id)"></td>
+        <td class="td" id="S31" onclick="tik(this.id)"></td>
+        <td class="td" id="S32" onclick="tik(this.id)"></td>
+        <td class="td" id="S33" onclick="tik(this.id)"></td>
+        <td class="td" id="S34" onclick="tik(this.id)"></td>
+        <td class="td" id="S35" onclick="tik(this.id)"></td>
+      </tr>
 
-    <tr>
-      <!-- row 6 -->
-      <td class="td" id="S30" onclick="tik(this.id);this.onclick=null;"></td>
-      <td class="td" id="S31" onclick="tik(this.id);this.onclick=null;"></td>
-      <td class="td" id="S32" onclick="tik(this.id);this.onclick=null;"></td>
-      <td class="td" id="S33" onclick="tik(this.id);this.onclick=null;"></td>
-      <td class="td" id="S34" onclick="tik(this.id);this.onclick=null;"></td>
-      <td class="td" id="S35" onclick="tik(this.id);this.onclick=null;"></td>
-    </tr>
+    </table>
+  </div>
 
-  </table>
 
   <!-- Infomation -->
   <span id="info">
-    <p>A long time ago in a galaxy far, far away .... There are 8 enemy spaceships hiding and you have 20 attempts to
+    <p>A long time ago in a galaxy far, far away .... There are 10 enemy spaceships hiding , you need find at least 8
+      spaceships , you have 20 attempts to
       find them and you need to use all 20 attempts, good luck.</p>
   </span>
 

@@ -1,21 +1,22 @@
 //intro timeout
+
 var x = document.querySelector("#board");
 setTimeout(function () {
     x.style.display = "none"
 }, 60000);
 
 
-
-// User chose
-
 //Table win image
+
 var img = new Image();
 img.src = "assets/images/enemy.jpg";
 
 // Counters
+
 var counterSpan = document.querySelector("#counterSpan1");
 var counterSpan2 = document.querySelector("#counterSpan2");
 
+// Win counter
 
 var counter2 = 0;
 counterSpan2.innerText = counter2;
@@ -26,6 +27,8 @@ function increaseCounter2() {
     counterSpan2.innerText = counter2;
 }
 
+// MISS Counter
+
 var counter = 0;
 counterSpan.innerText = counter;
 
@@ -35,13 +38,13 @@ function increaseCounter() {
     counterSpan.innerText = counter;
 }
 
+// General Counter
+
 var counter3 = 0;
 
 function increaseCounter3() {
 
     counter3++;
-
-
 }
 
 
@@ -49,96 +52,64 @@ function increaseCounter3() {
 
 // User chose
 
+var y;
 function tik(clicked_id) {
     var i = clicked_id;
 
+    function addimg() {
+         y = document.querySelector("#" + i).innerHTML += '<img src="' + img.src + '" width="90px" height="50px" />';
+    }
 
+    function addtext() {
+         y = document.querySelector("#" + i).innerHTML = "MISS";
 
-    if (i == r0) {
-        var y = document.querySelector("#" + i).innerHTML += '<img src="' + img.src + '" width="90px" height="50px" />';
+    }
+     
+    if ((i == r0) || (i == r1) || (i == r2) || (i == r2) || (i == r3) || (i == r4) || (i == r5) || (i == r6) || (i == r7) || (i == r8) || (i == r9) || (i == r10)) {
+       
+        
+       if (y = document.querySelector("#" + i).innerHTML.length == 0){
+        addimg();
         increaseCounter2();
         increaseCounter3();
-        bak();
-    } else if (i == r1) {
-        var y = document.querySelector("#" + i).innerHTML += '<img src="' + img.src + '" width="90px" height="50px" />';
-        increaseCounter2();
-        increaseCounter3();
-        bak();
-    } else if (i == r2) {
-        var y = document.querySelector("#" + i).innerHTML += '<img src="' + img.src + '" width="90px" height="50px" />';
-        increaseCounter2();
-        increaseCounter3();
-        bak();
-    } else if (i == r3) {
-        var y = document.querySelector("#" + i).innerHTML += '<img src="' + img.src + '" width="90px" height="50px" />';
-        increaseCounter2();
-        increaseCounter3();
-        bak();
-    } else if (i == r4) {
-        var y = document.querySelector("#" + i).innerHTML += '<img src="' + img.src + '" width="90px" height="50px" />';
-        increaseCounter2();
-        increaseCounter3();
-        bak();
-    } else if (i == r5) {
-        var y = document.querySelector("#" + i).innerHTML += '<img src="' + img.src + '" width="90px" height="50px" />';
-        increaseCounter2();
-        increaseCounter3();
-        bak();
-    } else if (i == r6) {
-        var y = document.querySelector("#" + i).innerHTML += '<img src="' + img.src + '" width="90px" height="50px" />';
-        increaseCounter2();
-        increaseCounter3();
-        bak();
-    } else if (i == r7) {
-        var y = document.querySelector("#" + i).innerHTML += '<img src="' + img.src + '" width="90px" height="50px" />';
-        increaseCounter2();
-        increaseCounter3();
-        bak();
-    } else if (i == r8) {
-        var y = document.querySelector("#" + i).innerHTML += '<img src="' + img.src + '" width="90px" height="50px" />';
-        increaseCounter2();
-        increaseCounter3();
-        bak();
-    } else if (i == r9) {
-        var y = document.querySelector("#" + i).innerHTML += '<img src="' + img.src + '" width="90px" height="50px" />';
-        increaseCounter2();
-        increaseCounter3();
-        bak();
-    } else if (i == r10) {
-        var y = document.querySelector("#" + i).innerHTML += '<img src="' + img.src + '" width="90px" height="50px" />';
-        increaseCounter2();
-        increaseCounter3();
-        bak();
-    } else {
-        var y = document.querySelector("#" + i).innerHTML = "MISS";
+        check();
+       }
+       
+        
+    } else if (y = document.querySelector("#" + i).innerHTML.length == 0){
+        addtext();
         increaseCounter();
         increaseCounter3();
-        bak();
+        check();
     }
 }
+
+
 
 
 // Computer chose
 
 var colleges = ["S0", " S1", "S2", "S3", "S4", "S5", "S6", "S7", "S8", "S9", "S10", "S11", "S12", "S13", "S14", "S15", "S16", "S17", "S18", "S19", "S20", "S21", "S22", "S23", "S24", "S25", "S26", "S27", "S28", "S29", "S30", "S31", "S32", "S33", "S34", "S35"]
 
-console.log(Math.random());
-console.log(Math.random() * colleges.length);
+var r0,r1,r2,r3,r4,r5,r6,r7,r8,r9,r10
 
-var com = Math.floor(Math.random() * colleges.length);
-var r0 = (colleges[Math.floor(Math.random() * colleges.length)]);
-var r1 = (colleges[Math.floor(Math.random() * colleges.length)]);
-var r2 = (colleges[Math.floor(Math.random() * colleges.length)]);
-var r3 = (colleges[Math.floor(Math.random() * colleges.length)]);
-var r4 = (colleges[Math.floor(Math.random() * colleges.length)]);
-var r5 = (colleges[Math.floor(Math.random() * colleges.length)]);
-var r6 = (colleges[Math.floor(Math.random() * colleges.length)]);
-var r7 = (colleges[Math.floor(Math.random() * colleges.length)]);
-var r8 = (colleges[Math.floor(Math.random() * colleges.length)]);
-var r9 = (colleges[Math.floor(Math.random() * colleges.length)]);
-var r10 = (colleges[Math.floor(Math.random() * colleges.length)]);
+function computer(){
+ r0 = (colleges[Math.floor(Math.random() * colleges.length)]);
+ r1 = (colleges[Math.floor(Math.random() * colleges.length)]);
+ r2 = (colleges[Math.floor(Math.random() * colleges.length)]);
+ r3 = (colleges[Math.floor(Math.random() * colleges.length)]);
+ r4 = (colleges[Math.floor(Math.random() * colleges.length)]);
+ r5 = (colleges[Math.floor(Math.random() * colleges.length)]);
+ r6 = (colleges[Math.floor(Math.random() * colleges.length)]);
+ r7 = (colleges[Math.floor(Math.random() * colleges.length)]);
+ r8 = (colleges[Math.floor(Math.random() * colleges.length)]);
+ r9 = (colleges[Math.floor(Math.random() * colleges.length)]);
+ r10 =(colleges[Math.floor(Math.random() * colleges.length)]);
+}
 
-//  Game of Win & Lose Elemet
+computer();
+
+//  Game of Win & Lose Elemet and Check
 
 var yoda = document.querySelector("#win");
 var darth_vader = document.querySelector("#lose");
@@ -154,12 +125,11 @@ function y() {
 function d() {
     yoda.style.display = "none";
     darth_vader.style.display = "block";
-
-
-
 }
 
-function bak() {
+var newgamebtn =document.querySelector("#newgame");
+
+function check() {
     var n = 20;
 
     if (counter3 == n) {
@@ -167,13 +137,13 @@ function bak() {
         if (counter2 == nu) {
 
             y();
-
+            newgamebtn.style.display="block";
 
         } else if (counter > counter2) {
 
 
             d();
-
+            newgamebtn.style.display="block";
         }
 
     } else {
@@ -182,3 +152,34 @@ function bak() {
     }
 
 }
+
+
+// New Game Button
+
+var t = document.querySelectorAll("td"), i;
+function reloadThePage(){
+    
+    //Clean Table
+
+for (i = 0; i < t.length; ++i) {
+    t[i].innerHTML="";
+  }
+    
+//    New  Computer Chose
+computer();
+
+// New Counters
+counter =0;
+counter2=0;
+counter3=0;
+counterSpan.innerText = counter;
+counterSpan2.innerText = counter2;
+
+// Win & Lose Pictures
+yoda.style.display="none";
+darth_vader.style.display="none";
+
+// Button display
+ newgamebtn.style.display="none";
+
+} 

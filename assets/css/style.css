@@ -111,6 +111,21 @@ p {
 
 
 }
+/* New Game Button */
+
+#newgame{
+
+    background-color: black;
+    border: 2px #ffdf01 solid;
+    text-align: center;
+    padding: 3px 116px;
+    text-decoration: none;
+    font-size: 23px;
+    float: right;
+    margin: 570px -349px 0 0;
+    display: none;
+
+}
 
 /* Backgraund Image */
 
@@ -191,7 +206,7 @@ td {
 
 #info {
 
-    margin: -214px 135px 0 0;
+    margin: -215px 0 0px -25px;
     padding: 58px;
     float: right;
 }
@@ -199,7 +214,14 @@ td {
 /* Media */
 
 @media screen and (max-width: 320) {
+    #win {
 
+        width: 100px;
+    }
+
+    #lose {
+        width: 100px;
+    }
 
     table {
         width: 100%;
@@ -232,6 +254,7 @@ td {
     table {
         width: 100%;
     }
+
 
 
     #page_name {
