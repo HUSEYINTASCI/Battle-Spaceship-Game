@@ -16,7 +16,7 @@ img.src = "assets/images/enemy.jpg";
 var counterSpan = document.querySelector("#counterSpan1");
 var counterSpan2 = document.querySelector("#counterSpan2");
 
-// Win counter
+// Catch counter
 
 var counter2 = 0;
 counterSpan2.innerText = counter2;
@@ -70,6 +70,7 @@ function tik(clicked_id) {
 
 
         if (y = document.querySelector("#" + i).innerHTML.length == 0) {
+            bomb();
             addimg();
             increaseCounter2();
             increaseCounter3();
@@ -85,7 +86,10 @@ function tik(clicked_id) {
     }
 }
 
-
+//    User chose sound effect
+function bomb(){
+    var player= document.querySelector("#bbomb")
+    player.play();}
 
 
 // Computer chose
