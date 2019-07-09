@@ -15,11 +15,11 @@ p {
     font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
     transform: perspective(300px) rotateX(25deg);
     transform-origin: 50% 76%;
-    text-align: justify;
+    text-align: center;
     position: absolute;
     font-weight: bold;
     overflow: hidden;
-    font-size: 350%;
+    font-size: 240%;
     height: 1178px;
     width: 144%;
     display: block;
@@ -70,7 +70,7 @@ p {
     width: 171px;
     height: 25px;
     float: right;
-    margin-top: 226px;
+    margin-top: 28px;
     margin-left: 47px;
 }
 
@@ -80,7 +80,7 @@ p {
     width: 135px;
     height: 25px;
     float: right;
-    margin-top: 226px;
+    margin-top: 28px;
 }
 
 /* Lightsword cursor  */
@@ -100,17 +100,16 @@ p {
 
 #page_logo {
     margin: center;
-    margin: -39px 18px -149px 328px;
+    margin: 4px 0px -124px 331px;
 }
 
 /* Backgraund Image */
 
 #backround_image {
     background-repeat: no-repeat;
-    margin: 48px 0 126px 4px;
+    margin: 0px 0 144px 0px;
     cursor: url(http://www.rw-designer.com/cursor-extern.php?id=66943);
     width: 69%;
-
 }
 
 /* Millenium Falcon */
@@ -121,7 +120,7 @@ p {
     -webkit-animation: mymove 6s infinite;
     /* Safari 4.0 - 8.0 */
     animation: mymove 15s infinite;
-    margin-top: 138px;
+    margin-top: 143px;
 }
 
 @keyframes mymove {
@@ -188,7 +187,7 @@ td {
     text-decoration: none;
     font-size: 23px;
     float: right;
-    margin: 570px -349px 0 0;
+    margin: 375px -347px 0 0;
     display: none;
 }
 
@@ -215,24 +214,16 @@ td {
     }
 
     #page_logo {
-        width: 100%;
-        margin: -38px 0 -49px -119px;
+        margin: 0 0 0 -112px;
+        height: 0px;
     }
-
-    #info {
-        padding: 50px;
-        float: right;
-    }
-
 
     #miss {
-        margin: 221px 1px -262px 261px;
+        margin: 46px 0px 0 262px;
         float: left;
     }
 
     #catch {
-        z-index: 500;
-        margin: 222px 706px -256px 15px;
-       
+        margin: -25px 635px 0 0;
     }
 }

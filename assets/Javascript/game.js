@@ -3,7 +3,7 @@
 var x = document.querySelector("#board");
 setTimeout(function () {
     x.style.display = "none"
-}, 40000);
+}, 30000);
 
 
 //Table win image
