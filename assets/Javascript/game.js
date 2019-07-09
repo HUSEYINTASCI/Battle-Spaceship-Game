@@ -3,7 +3,7 @@
 var x = document.querySelector("#board");
 setTimeout(function () {
     x.style.display = "none"
-}, 60000);
+}, 40000);
 
 
 //Table win image
@@ -53,30 +53,31 @@ function increaseCounter3() {
 // User chose
 
 var y;
+
 function tik(clicked_id) {
     var i = clicked_id;
 
     function addimg() {
-         y = document.querySelector("#" + i).innerHTML += '<img src="' + img.src + '" width="90px" height="50px" />';
+        y = document.querySelector("#" + i).innerHTML += '<img src="' + img.src + '" width="90px" height="50px" />';
     }
 
     function addtext() {
-         y = document.querySelector("#" + i).innerHTML = "MISS";
+        y = document.querySelector("#" + i).innerHTML = "MISS";
 
     }
-     
+
     if ((i == r0) || (i == r1) || (i == r2) || (i == r2) || (i == r3) || (i == r4) || (i == r5) || (i == r6) || (i == r7) || (i == r8) || (i == r9) || (i == r10)) {
-       
-        
-       if (y = document.querySelector("#" + i).innerHTML.length == 0){
-        addimg();
-        increaseCounter2();
-        increaseCounter3();
-        check();
-       }
-       
-        
-    } else if (y = document.querySelector("#" + i).innerHTML.length == 0){
+
+
+        if (y = document.querySelector("#" + i).innerHTML.length == 0) {
+            addimg();
+            increaseCounter2();
+            increaseCounter3();
+            check();
+        }
+
+
+    } else if (y = document.querySelector("#" + i).innerHTML.length == 0) {
         addtext();
         increaseCounter();
         increaseCounter3();
@@ -91,20 +92,20 @@ function tik(clicked_id) {
 
 var colleges = ["S0", " S1", "S2", "S3", "S4", "S5", "S6", "S7", "S8", "S9", "S10", "S11", "S12", "S13", "S14", "S15", "S16", "S17", "S18", "S19", "S20", "S21", "S22", "S23", "S24", "S25", "S26", "S27", "S28", "S29", "S30", "S31", "S32", "S33", "S34", "S35"]
 
-var r0,r1,r2,r3,r4,r5,r6,r7,r8,r9,r10
+var r0, r1, r2, r3, r4, r5, r6, r7, r8, r9, r10
 
-function computer(){
- r0 = (colleges[Math.floor(Math.random() * colleges.length)]);
- r1 = (colleges[Math.floor(Math.random() * colleges.length)]);
- r2 = (colleges[Math.floor(Math.random() * colleges.length)]);
- r3 = (colleges[Math.floor(Math.random() * colleges.length)]);
- r4 = (colleges[Math.floor(Math.random() * colleges.length)]);
- r5 = (colleges[Math.floor(Math.random() * colleges.length)]);
- r6 = (colleges[Math.floor(Math.random() * colleges.length)]);
- r7 = (colleges[Math.floor(Math.random() * colleges.length)]);
- r8 = (colleges[Math.floor(Math.random() * colleges.length)]);
- r9 = (colleges[Math.floor(Math.random() * colleges.length)]);
- r10 =(colleges[Math.floor(Math.random() * colleges.length)]);
+function computer() {
+    r0 = (colleges[Math.floor(Math.random() * colleges.length)]);
+    r1 = (colleges[Math.floor(Math.random() * colleges.length)]);
+    r2 = (colleges[Math.floor(Math.random() * colleges.length)]);
+    r3 = (colleges[Math.floor(Math.random() * colleges.length)]);
+    r4 = (colleges[Math.floor(Math.random() * colleges.length)]);
+    r5 = (colleges[Math.floor(Math.random() * colleges.length)]);
+    r6 = (colleges[Math.floor(Math.random() * colleges.length)]);
+    r7 = (colleges[Math.floor(Math.random() * colleges.length)]);
+    r8 = (colleges[Math.floor(Math.random() * colleges.length)]);
+    r9 = (colleges[Math.floor(Math.random() * colleges.length)]);
+    r10 = (colleges[Math.floor(Math.random() * colleges.length)]);
 }
 
 computer();
@@ -127,7 +128,7 @@ function d() {
     darth_vader.style.display = "block";
 }
 
-var newgamebtn =document.querySelector("#newgame");
+var newgamebtn = document.querySelector("#newgame");
 
 function check() {
     var n = 20;
@@ -137,13 +138,13 @@ function check() {
         if (counter2 == nu) {
 
             y();
-            newgamebtn.style.display="block";
+            newgamebtn.style.display = "block";
 
         } else if (counter > counter2) {
 
 
             d();
-            newgamebtn.style.display="block";
+            newgamebtn.style.display = "block";
         }
 
     } else {
@@ -156,30 +157,32 @@ function check() {
 
 // New Game Button
 
-var t = document.querySelectorAll("td"), i;
-function reloadThePage(){
-    
+var t = document.querySelectorAll("td"),
+    i;
+
+function reloadThePage() {
+
     //Clean Table
 
-for (i = 0; i < t.length; ++i) {
-    t[i].innerHTML="";
-  }
-    
-//    New  Computer Chose
-computer();
+    for (i = 0; i < t.length; ++i) {
+        t[i].innerHTML = "";
+    }
 
-// New Counters
-counter =0;
-counter2=0;
-counter3=0;
-counterSpan.innerText = counter;
-counterSpan2.innerText = counter2;
+    //    New  Computer Chose
+    computer();
 
-// Win & Lose Pictures
-yoda.style.display="none";
-darth_vader.style.display="none";
+    // New Counters
+    counter = 0;
+    counter2 = 0;
+    counter3 = 0;
+    counterSpan.innerText = counter;
+    counterSpan2.innerText = counter2;
 
-// Button display
- newgamebtn.style.display="none";
+    // Win & Lose Pictures
+    yoda.style.display = "none";
+    darth_vader.style.display = "none";
 
-} 
+    // Button display
+    newgamebtn.style.display = "none";
+
+}

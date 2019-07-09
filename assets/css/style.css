@@ -1,10 +1,8 @@
 /* Body */
 
 body {
-
     background-color: rgba(0, 0, 0, 0.979);
     position: fixed;
-
 }
 
 /* Intro  */
@@ -22,7 +20,7 @@ p {
     font-weight: bold;
     overflow: hidden;
     font-size: 350%;
-    height: 995px;
+    height: 1178px;
     width: 144%;
     display: block;
     bottom: 0;
@@ -69,7 +67,7 @@ p {
 
     background-color: black;
     z-index: 501;
-    width: 176px;
+    width: 171px;
     height: 25px;
     float: right;
     margin-top: 226px;
@@ -95,46 +93,25 @@ p {
 /* Background Sound */
 
 #bsound {
-
     display: none;
 }
 
 /* Page Logo */
 
-#page_name {
-    position: absolute;
-    height: 200px;
-    width: 400px;
-    margin: -450px 0px 0px -466px;
-    top: 50%;
-    left: 50%;
-
-
-}
-/* New Game Button */
-
-#newgame{
-
-    background-color: black;
-    border: 2px #ffdf01 solid;
-    text-align: center;
-    padding: 3px 116px;
-    text-decoration: none;
-    font-size: 23px;
-    float: right;
-    margin: 570px -349px 0 0;
-    display: none;
-
+#page_logo {
+    margin: center;
+    margin: -39px 18px -149px 328px;
 }
 
 /* Backgraund Image */
 
 #backround_image {
     background-repeat: no-repeat;
-    margin: 0px 0px 156px -104px;
+    margin: 48px 0 126px 4px;
     cursor: url(http://www.rw-designer.com/cursor-extern.php?id=66943);
-}
+    width: 69%;
 
+}
 
 /* Millenium Falcon */
 
@@ -159,12 +136,12 @@ p {
 
 /* Battle Table */
 
-table {
+#tbl {
     border: 3px #ffdf01 solid;
     width: 600px;
     height: 400px;
-    margin: -588px 0 0 571px;
-    position: absolute;
+    margin: -570px 0 0 571px;
+
 }
 
 td {
@@ -176,102 +153,86 @@ td {
     text-align: center;
     font: bold;
 
-
-
 }
 
 /* Images of win & lose */
 
 #win {
-    margin-left: 79%;
+    margin-left: 78%;
     padding: -61px;
     width: 67%;
-    margin-top: -560px;
+    margin-top: -543px;
     z-index: 1;
     position: absolute;
     display: none;
 }
 
 #lose {
-    margin-left: 79%;
+    margin-left: 78%;
     padding: -61px;
     width: 67%;
-    margin-top: -560px;
+    margin-top: -543px;
     z-index: 2;
     position: absolute;
+    display: none;
+}
+
+/* New Game Button */
+
+#newgame {
+
+    background-color: black;
+    border: 2px #ffdf01 solid;
+    text-align: center;
+    padding: 3px 116px;
+    text-decoration: none;
+    font-size: 23px;
+    float: right;
+    margin: 570px -349px 0 0;
     display: none;
 }
 
 /* information */
 
 #info {
-
-    margin: -215px 0 0px -25px;
-    padding: 58px;
+    padding: 50px;
     float: right;
 }
 
 /* Media */
 
-@media screen and (max-width: 320) {
-    #win {
-
-        width: 100px;
-    }
-
-    #lose {
-        width: 100px;
-    }
-
-    table {
-        width: 100%;
-    }
-
-
-    #page_name {
-        width: 100%;
-    }
-
-}
-
 @media screen and (max-width: 640px) {
 
+    #tbl {
+        border: 3px #ffdf01 solid;
+        width: 331px;
+        height: 112px;
+        margin: 78px 0 0 44px;
+    }
 
-    table {
+    #backround_image {
+        display: none;
+    }
+
+    #page_logo {
         width: 100%;
+        margin: -38px 0 -49px -119px;
+    }
+
+    #info {
+        padding: 50px;
+        float: right;
     }
 
 
-    #page_name {
-        width: 100%;
+    #miss {
+        margin: 221px 1px -262px 261px;
+        float: left;
     }
 
-}
-
-
-@media screen and (max-width: 768px) {
-
-    table {
-        width: 100%;
+    #catch {
+        z-index: 500;
+        margin: 222px 706px -256px 15px;
+       
     }
-
-
-
-    #page_name {
-        width: 100%;
-    }
-
-}
-
-@media screen and (max-width: 980px) {
-
-    table {
-        width: 100%;
-    }
-
-
-    #page_name {
-        width: 100%;
-    }
-
 }
