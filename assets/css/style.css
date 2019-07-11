@@ -22,7 +22,7 @@ p {
     font-size: 240%;
     height: 1178px;
     width: 144%;
-    display: none;
+    display: block;
     bottom: 0;
     left: 50%;
     background-color: black;
