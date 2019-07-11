@@ -52,7 +52,14 @@ function increaseCounter3() {
 
 // User chose
 
+//    User chose sound effect
+function bomb(){
+    var player= document.querySelector("#bbomb")
+    player.play();}
+
+
 var y;
+
 
 function tik(clicked_id) {
     var i = clicked_id;
@@ -86,10 +93,6 @@ function tik(clicked_id) {
     }
 }
 
-//    User chose sound effect
-function bomb(){
-    var player= document.querySelector("#bbomb")
-    player.play();}
 
 
 // Computer chose
@@ -112,47 +115,36 @@ function computer() {
     r10 = (colleges[Math.floor(Math.random() * colleges.length)]);
 }
 
+
 computer();
 
 //  Game of Win & Lose Elemet and Check
 
 var yoda = document.querySelector("#win");
 var darth_vader = document.querySelector("#lose");
-
-
-function y() {
-
-    yoda.style.display = "block";
-    darth_vader.style.display = "none";
-
-}
-
-function d() {
-    yoda.style.display = "none";
-    darth_vader.style.display = "block";
-}
-
 var newgamebtn = document.querySelector("#newgame");
+var n = 20;
+var nu = 7;
 
 function check() {
-    var n = 20;
 
-    if (counter3 == n) {
-        var nu = 8;
-        if (counter2 == nu) {
 
-            y();
+    if (counter + counter2 == n) {
+
+        if (counter2 > nu) {
+
+            yoda.style.display = "block";
+            darth_vader.style.display = "none";
+            debugger;
             newgamebtn.style.display = "block";
 
-        } else if (counter > counter2) {
+        } else {
 
 
-            d();
+            yoda.style.display = "none";
+            darth_vader.style.display = "block";
             newgamebtn.style.display = "block";
         }
-
-    } else {
-
 
     }
 

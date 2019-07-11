@@ -22,7 +22,7 @@ p {
     font-size: 240%;
     height: 1178px;
     width: 144%;
-    display: block;
+    display: none;
     bottom: 0;
     left: 50%;
     background-color: black;
@@ -96,15 +96,21 @@ p {
     display: none;
 }
 
-#bbomb{
+#bbomb {
 
     display: none;
 }
+
 /* Page Logo */
 
 #page_logo {
     margin: center;
     margin: 4px 0px -124px 331px;
+}
+
+#plogo {
+    display: none;
+
 }
 
 /* Backgraund Image */
@@ -143,7 +149,7 @@ p {
     border: 3px #ffdf01 solid;
     width: 600px;
     height: 400px;
-    margin: -570px 0 0 513px;
+    margin: -570px 0 0 531px;
 
 }
 
@@ -164,7 +170,7 @@ td {
     margin-left: 78%;
     padding: -61px;
     width: 67%;
-    margin-top: -543px;
+    margin-top: -524px;
     z-index: 1;
     position: absolute;
     display: none;
@@ -174,7 +180,7 @@ td {
     margin-left: 78%;
     padding: -61px;
     width: 67%;
-    margin-top: -543px;
+    margin-top: -524px;
     z-index: 2;
     position: absolute;
     display: none;
@@ -191,8 +197,10 @@ td {
     text-decoration: none;
     font-size: 23px;
     float: right;
-    margin: 375px -347px 0 0;
+    margin: 374px 0 0 1149px;
     display: none;
+    position: absolute;
+    z-index: 3;
 }
 
 /* information */
@@ -203,31 +211,178 @@ td {
 }
 
 /* Media */
-
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 1500px){
 
     #tbl {
-        border: 3px #ffdf01 solid;
-        width: 331px;
-        height: 112px;
-        margin: 78px 0 0 44px;
+         
+        width: 571px;
+        height: 400px;
+        margin: -541px 0 0 509px;
+    }
+    #newgame {
+
+        background-color: black;
+        border: 2px #ffdf01 solid;
+        text-align: center;
+        padding: 3px 116px;
+        text-decoration: none;
+        font-size: 23px;
+        float: right;
+        margin: 375px 0 0 1082px;
+        display: none;
+        position: absolute;
+        z-index: 3;
+    }
+}
+@media screen and (max-width: 1024px){
+
+    
+}
+
+@media screen and (max-width: 768px) {
+
+    #tbl {
+
+        width: 547px;
+
+        height: 0;
+
+        margin: 0px 20px 3px 113px;
     }
 
     #backround_image {
         display: none;
     }
 
+    #falcon {
+        animation-timing-function: linear;
+        position: relative;
+        -webkit-animation: mymove 6s infinite;
+        /* Safari 4.0 - 8.0 */
+        animation: mymove 15s infinite;
+        margin-top: 27px;
+    }
+
     #page_logo {
-        margin: 0 0 0 -112px;
-        height: 0px;
+        display: none;
     }
 
     #miss {
-        margin: 46px 0px 0 262px;
+        margin: 14px 1px 0px 556px;
         float: left;
+        font-size: 16px;
+        font-family: fantasy;
     }
 
     #catch {
-        margin: -25px 635px 0 0;
+        margin: -29px 519px 0 0;
+        font-size: 16px;
+        font-family: fantasy;
+
     }
+
+    #plogo {
+
+        display: block;
+
+        margin: 0px 0px 0 234px;
+
+        display: block;
+
+        font-size: 42px;
+
+        font-family: fantasy;
+
+    }
+    #newgame {
+
+        background-color: black;
+        border: 2px #ffdf01 solid;
+        text-align: center;
+        padding: 3px 116px;
+        text-decoration: none;
+        font-size: 23px;
+        float: right;
+        margin: 522px 0 0 204px;
+        display: none;
+        position: absolute;
+        z-index: 3;
+    }
+    }
+  
+@media screen and (max-width: 600px) {
+    #tbl {
+
+        width: 403px;
+        
+        height: 0;
+        
+        margin: 0px 20px 3px 5px;
+
+       
+        
+        }
+        
+            #backround_image {
+                display: none;
+            }
+        
+            #falcon {
+                animation-timing-function: linear;
+                position: relative;
+                -webkit-animation: mymove 6s infinite;
+                /* Safari 4.0 - 8.0 */
+                animation: mymove 15s infinite;
+                margin-top: 27px;
+            }
+        
+            #page_logo {
+                display: none;
+            }
+        
+            #miss {
+                margin: 14px 1px 0px 305px;
+                float: left;
+                font-size: 16px;
+                font-family: fantasy;
+            }
+        
+            #catch {
+                margin: -25px 335px 0 0;
+                font-size: 16px;
+                font-family: fantasy;
+            }
+        
+            #plogo {
+        
+        display: block;
+        
+        margin: 0px 0px 0 70px;
+        
+        display: block;
+        
+        font-size: 42px;
+        
+        font-family: fantasy;
+        
+        }
+        #newgame {
+
+            background-color: black;
+            border: 2px #ffdf01 solid;
+            text-align: center;
+            padding: 3px 116px;
+            text-decoration: none;
+            font-size: 23px;
+            float: right;
+            margin: 379px 0 0 39px;
+            display: none;
+            position: absolute;
+            z-index: 3;
+        }
+        #info {
+            padding: 67px;
+            float: right;
+        }
 }
+
