@@ -7,14 +7,14 @@ Battle Spaceship Game Link
 
 https://huseyintasci.github.io/Battle-Spaceship-Game/
 
-
+Pure Javascript.
 
 
 Intro
 
-![alt text]()
+![alt text](https://github.com/HUSEYINTASCI/Battle-Spaceship-Game/blob/master/assets/images/B_intro.PNG)
 
 
 Game 
 
-![alt text]()
+![alt text](https://github.com/HUSEYINTASCI/Battle-Spaceship-Game/blob/master/assets/images/B_intro.PNG)
