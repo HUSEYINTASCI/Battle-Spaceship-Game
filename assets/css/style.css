@@ -7,6 +7,17 @@ body {
 
 /* Intro  */
 
+#back{
+
+    background-color: black;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    z-index: 1;
+    display: block;
+}
+
 p {
     color: #ffdf01;
 }
@@ -14,19 +25,18 @@ p {
 #board {
     font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
     transform: perspective(300px) rotateX(25deg);
-    transform-origin: 50% 76%;
+    transform-origin: 50% 88%;
     text-align: center;
     position: absolute;
     font-weight: bold;
     overflow: hidden;
     font-size: 240%;
-    height: 1178px;
-    width: 144%;
+    height: 100%;
+    width: 100%;
     display: block;
     bottom: 0;
-    left: 50%;
+    left: 0;
     background-color: black;
-    margin: -414px -49px 253px -1135px;
     z-index: 99;
 }
 
@@ -122,6 +132,13 @@ p {
     width: 69%;
 }
 
+#im{
+    position: relative;
+    vertical-align: middle;
+    border-style: none;
+    z-index: -1;
+}
+
 /* Millenium Falcon */
 
 #falcon {
@@ -210,14 +227,18 @@ td {
     float: right;
 }
 
+
+
+
+
 /* Media */
 @media screen and (max-width: 1500px){
 
     #tbl {
          
         width: 571px;
-        height: 400px;
-        margin: -541px 0 0 509px;
+    height: 400px;
+    margin: -457px 3px 0 436px;
     }
     #newgame {
 
@@ -234,13 +255,8 @@ td {
         z-index: 3;
     }
 }
+
 @media screen and (max-width: 1024px){
-
-    
-}
-
-@media screen and (max-width: 768px) {
-
     #tbl {
 
         width: 547px;
@@ -309,65 +325,64 @@ td {
         z-index: 3;
     }
     }
-  
-@media screen and (max-width: 600px) {
-    #tbl {
 
-        width: 403px;
-        
-        height: 0;
-        
-        margin: 0px 20px 3px 5px;
+    @media screen and (max-width: 768px) {
 
-       
-        
+        #tbl {
+    
+            width: 547px;
+    
+            height: 0;
+    
+            margin: 0px 20px 3px 113px;
         }
-        
-            #backround_image {
-                display: none;
-            }
-        
-            #falcon {
-                animation-timing-function: linear;
-                position: relative;
-                -webkit-animation: mymove 6s infinite;
-                /* Safari 4.0 - 8.0 */
-                animation: mymove 15s infinite;
-                margin-top: 27px;
-            }
-        
-            #page_logo {
-                display: none;
-            }
-        
-            #miss {
-                margin: 14px 1px 0px 305px;
-                float: left;
-                font-size: 16px;
-                font-family: fantasy;
-            }
-        
-            #catch {
-                margin: -25px 335px 0 0;
-                font-size: 16px;
-                font-family: fantasy;
-            }
-        
-            #plogo {
-        
-        display: block;
-        
-        margin: 0px 0px 0 70px;
-        
-        display: block;
-        
-        font-size: 42px;
-        
-        font-family: fantasy;
-        
+    
+        #backround_image {
+            display: none;
+        }
+    
+        #falcon {
+            animation-timing-function: linear;
+            position: relative;
+            -webkit-animation: mymove 6s infinite;
+            /* Safari 4.0 - 8.0 */
+            animation: mymove 15s infinite;
+            margin-top: 27px;
+        }
+    
+        #page_logo {
+            display: none;
+        }
+    
+        #miss {
+            margin: 14px 1px 0px 556px;
+            float: left;
+            font-size: 16px;
+            font-family: fantasy;
+        }
+    
+        #catch {
+            margin: -29px 519px 0 0;
+            font-size: 16px;
+            font-family: fantasy;
+    
+        }
+    
+        #plogo {
+    
+            display: block;
+    
+            margin: 0px 0px 0 234px;
+    
+            display: block;
+    
+            font-size: 42px;
+    
+            font-family: fantasy;
+    
         }
         #newgame {
-
+    
             background-color: black;
             border: 2px #ffdf01 solid;
             text-align: center;
@@ -375,14 +390,96 @@ td {
             text-decoration: none;
             font-size: 23px;
             float: right;
-            margin: 379px 0 0 39px;
+            margin: 522px 0 0 204px;
             display: none;
             position: absolute;
             z-index: 3;
         }
-        #info {
-            padding: 67px;
-            float: right;
         }
-}
+
+        @media screen and (max-width: 600px) {
+            #tbl {
+        
+                width: 403px;
+                
+                height: 0;
+                
+                margin: 0px 20px 3px 5px;
+        
+               
+                
+                }
+                
+                    #backround_image {
+                        display: none;
+                    }
+                
+                    #falcon {
+                        animation-timing-function: linear;
+                        position: relative;
+                        -webkit-animation: mymove 6s infinite;
+                        /* Safari 4.0 - 8.0 */
+                        animation: mymove 15s infinite;
+                        margin-top: 27px;
+                    }
+                
+                    #page_logo {
+                        display: none;
+                    }
+                
+                    #miss {
+                        margin: 14px 1px 0px 305px;
+                        float: left;
+                        font-size: 16px;
+                        font-family: fantasy;
+                    }
+                
+                    #catch {
+                        margin: -25px 335px 0 0;
+                        font-size: 16px;
+                        font-family: fantasy;
+                    }
+                
+                    #plogo {
+                
+                display: block;
+                
+                margin: 0px 0px 0 70px;
+                
+                display: block;
+                
+                font-size: 42px;
+                
+                font-family: fantasy;
+                
+                }
+                #newgame {
+        
+                    background-color: black;
+                    border: 2px #ffdf01 solid;
+                    text-align: center;
+                    padding: 3px 116px;
+                    text-decoration: none;
+                    font-size: 23px;
+                    float: right;
+                    margin: 379px 0 0 39px;
+                    display: none;
+                    position: absolute;
+                    z-index: 3;
+                }
+                #info {
+                    padding: 67px;
+                    float: right;
+                }
+        }
+
+  
+  
+   
+
+
+
+
+
+
 

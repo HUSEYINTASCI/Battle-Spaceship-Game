@@ -1,9 +1,11 @@
 //intro timeout
 
 var x = document.querySelector("#board");
+var bc = document.querySelector("#back");
 setTimeout(function () {
     x.style.display = "none"
-}, 30000);
+    bc.style.display = "none"
+}, 40000);
 
 
 //Table win image
@@ -65,7 +67,7 @@ function tik(clicked_id) {
     var i = clicked_id;
 
     function addimg() {
-        y = document.querySelector("#" + i).innerHTML += '<img src="' + img.src + '" width="90px" height="50px" />';
+        y = document.querySelector("#" + i).innerHTML += '<img src="' + img.src + '" width="80px" height="50px" />';
     }
 
     function addtext() {
