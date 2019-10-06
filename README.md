@@ -17,4 +17,4 @@ Intro
 
 Game 
 
-![alt text](https://github.com/HUSEYINTASCI/Battle-Spaceship-Game/blob/master/assets/images/B_intro.PNG)
+![alt text](https://github.com/HUSEYINTASCI/Battle-Spaceship-Game/blob/master/assets/images/B_G.PNG)
