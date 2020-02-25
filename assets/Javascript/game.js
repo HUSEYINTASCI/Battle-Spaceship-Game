@@ -55,9 +55,10 @@ function increaseCounter3() {
 // User chose
 
 //    User chose sound effect
-function bomb(){
-    var player= document.querySelector("#bbomb")
-    player.play();}
+function bomb() {
+    var player = document.querySelector("#bbomb")
+    player.play();
+}
 
 
 var y;
@@ -137,7 +138,6 @@ function check() {
 
             yoda.style.display = "block";
             darth_vader.style.display = "none";
-            debugger;
             newgamebtn.style.display = "block";
 
         } else {

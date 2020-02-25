@@ -7,7 +7,7 @@ Battle Spaceship Game Link
 
 https://huseyintasci.github.io/Battle-Spaceship-Game/
 
-Pure Javascript.
+%100 Pure  Javascript.
 
 
 Intro
