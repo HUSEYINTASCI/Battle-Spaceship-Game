@@ -3,6 +3,7 @@
 body {
     background-color: rgba(0, 0, 0, 0.979);
     position: fixed;
+    
 }
 
 /* Intro  */
@@ -232,31 +233,14 @@ td {
 
 
 /* Media */
-@media screen and (max-width: 1500px){
 
-    #tbl {
-         
-        width: 571px;
-    height: 400px;
-    margin: -457px 3px 0 436px;
-    }
-    #newgame {
-
-        background-color: black;
-        border: 2px #ffdf01 solid;
-        text-align: center;
-        padding: 3px 116px;
-        text-decoration: none;
-        font-size: 23px;
-        float: right;
-        margin: 375px 0 0 1082px;
-        display: none;
-        position: absolute;
-        z-index: 3;
-    }
-}
 
 @media screen and (max-width: 1024px){
+    body {
+        background-color: rgba(0, 0, 0, 0.979);
+        position: fixed;
+        margin: 12rem;
+    }
     #tbl {
 
         width: 547px;
